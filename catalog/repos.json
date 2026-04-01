@@ -1,0 +1,106 @@
+{
+  "$schema": "../schemas/repo-catalog.schema.json",
+  "version": 1,
+  "centralRepo": {
+    "org": "HenrikFaul",
+    "repo": "governance",
+    "defaultBranch": "main"
+  },
+  "repos": [
+    {
+      "id": "henrikfaul-hobbeast",
+      "org": "HenrikFaul",
+      "repo": "hobbeast",
+      "projectName": "Hobbeast",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "supabase"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    },
+    {
+      "id": "henrikfaul-pubapp",
+      "org": "HenrikFaul",
+      "repo": "pubapp",
+      "projectName": "PubApp",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "supabase"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    },
+    {
+      "id": "henrikfaul-pixel-perfect-clone-8300",
+      "org": "HenrikFaul",
+      "repo": "pixel-perfect-clone-8300",
+      "projectName": "Pixel Perfect Clone 8300",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "supabase"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    },
+    {
+      "id": "henrikfaul-releasegovernance",
+      "org": "HenrikFaul",
+      "repo": "ReleaseGovernance",
+      "projectName": "Release Governance",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "supabase"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    },
+    {
+      "id": "henrikfaul-friends-availability-calendar",
+      "org": "HenrikFaul",
+      "repo": "friends-availability-calendar",
+      "projectName": "Friends Availability Calendar",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "supabase"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    },
+    {
+      "id": "henrikfaul-work",
+      "org": "HenrikFaul",
+      "repo": "work",
+      "projectName": "Work",
+      "defaultBranch": "main",
+      "stack": [
+        "nextjs",
+        "typescript"
+      ],
+      "usesVersioningFolder": true,
+      "governanceMode": "subtree",
+      "active": true,
+      "localLessonsFile": "codingLessonsLearnt.local.md"
+    }
+  ]
+}

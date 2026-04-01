@@ -1,0 +1,16 @@
+{
+  "org": "HenrikFaul",
+  "repo": "my-new-app",
+  "projectName": "My New App",
+  "defaultBranch": "main",
+  "stack": [
+    "nextjs",
+    "typescript",
+    "supabase"
+  ],
+  "usesVersioningFolder": true,
+  "governanceMode": "subtree",
+  "localLessonsFile": "codingLessonsLearnt.local.md",
+  "centralRepoOrg": "HenrikFaul",
+  "centralRepoName": "governance"
+}

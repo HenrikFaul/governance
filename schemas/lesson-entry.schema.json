@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/lesson-entry.schema.json",
+  "title": "LessonEntry",
+  "type": "object",
+  "required": ["id", "title", "body"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string", "minLength": 3 },
+    "body": { "type": "string", "minLength": 10 },
+    "repoOrigin": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

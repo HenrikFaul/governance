@@ -1,0 +1,13 @@
+{
+  "name": "@henrikfaul/governance-pack",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-pack.mjs",
+    "bootstrap:new": "node tools/bootstrap-new-repo.mjs",
+    "bootstrap:all": "node tools/bootstrap-all-repos.mjs",
+    "merge:lessons": "node tools/merge-lessons.mjs"
+  },
+  "description": "Shared Dev Governance Pack for HenrikFaul repositories"
+}

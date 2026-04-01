@@ -1,0 +1,42 @@
+{
+  "org": "HenrikFaul",
+  "centralRepoName": "governance",
+  "repos": [
+    {
+      "org": "HenrikFaul",
+      "repo": "hobbeast",
+      "projectName": "Hobbeast",
+      "defaultBranch": "main"
+    },
+    {
+      "org": "HenrikFaul",
+      "repo": "pubapp",
+      "projectName": "PubApp",
+      "defaultBranch": "main"
+    },
+    {
+      "org": "HenrikFaul",
+      "repo": "pixel-perfect-clone-8300",
+      "projectName": "Pixel Perfect Clone 8300",
+      "defaultBranch": "main"
+    },
+    {
+      "org": "HenrikFaul",
+      "repo": "ReleaseGovernance",
+      "projectName": "Release Governance",
+      "defaultBranch": "main"
+    },
+    {
+      "org": "HenrikFaul",
+      "repo": "friends-availability-calendar",
+      "projectName": "Friends Availability Calendar",
+      "defaultBranch": "main"
+    },
+    {
+      "org": "HenrikFaul",
+      "repo": "work",
+      "projectName": "Work",
+      "defaultBranch": "main"
+    }
+  ]
+}
