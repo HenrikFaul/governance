@@ -23,3 +23,10 @@ This repository is governed by the central pack from `HenrikFaul/governance`.
 - Shared lessons: `.governance/codingLessonsLearnt.md`
 - Shared versioning rules: `.governance/versioning-guidelines.md`
 - Local lessons append target: `codingLessonsLearnt.local.md`
+
+## Execution authority enforcement
+- Treat clear user requests as execution instructions, not discussion starters.
+- If Jira, GitHub, changelog, governance, implementation-note, or documentation updates are the natural next step, execute them without separate approval.
+- Ask only for genuine ambiguity or for destructive, external, production, security-sensitive, financial, or legal actions.
+- Prefer end-to-end completion with minimal friction.
+

@@ -779,3 +779,13 @@ A fejlesztés CSAK akkor tekinthető késznek, ha:
 
 *Utoljára frissítve: 2026-04-02 — összevont governance + lessons learnt + AI kutatási protokoll*
 *Ez egy FOLYAMATOSAN BŐVÜLŐ fájl. Új hibákat és hasznos governance tanulságokat MINDIG appendelj, SOHA ne törölj!*
+
+
+### [HIBA-EXEC-001] Felesleges visszakérdezés implied execution lépésekre
+- **Dátum**: 2026-04-02
+- **Fájl**: Governance / execution flow / AI operating behavior
+- **Hibaüzenet**: Az AI külön megerősítést kért Jira, GitHub, changelog vagy governance update előtt, pedig a felhasználói kérésből ezek természetes következő lépések voltak.
+- **Gyökérok**: Advisory-chatbot működés execution-agent működés helyett; túl alacsony implicit authorization alkalmazás.
+- **Javítás**: A clear request alapértelmezetten implicit authorization minden normál delivery-lépésre; az AI csak valódi ambiguity vagy high-risk action esetén kérdez vissza.
+- **Megelőzés**: Minden fejlesztésnél alkalmazni kell a zero-confirmation execution szabályt: ha Jira/GitHub/changelog/governance update a task természetes része, azt külön approval nélkül végre kell hajtani.
+

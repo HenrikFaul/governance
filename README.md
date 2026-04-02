@@ -22,3 +22,10 @@ npm run bootstrap:new -- --config examples/new-repo.config.json --out ./generate
 npm run bootstrap:all -- ./generated-existing-repos
 npm run merge:lessons -- ./_incoming ./codingLessonsLearnt.merged.md
 ```
+
+## Governance file roles
+- `controller.md` = operating controller and enforcement layer
+- `agent_execution_rules.md` = canonical execution authority and zero-confirmation rules
+- `codingLessonsLearnt.md` = lessons learned, verification protocol, recurring mistake prevention
+- `business_process_automation_prompts.md` = reusable master prompts and role-based execution prompts
+
