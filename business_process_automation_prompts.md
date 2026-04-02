@@ -9,8 +9,6 @@ TREAT THIS AS EXECUTION INSTRUCTION. ZERO CONFIRMATION MODE ON.
 3. Set governance files as protected branch rules
 4. Disable all GitHub confirmation dialogs via API
 5. Confirm completion with repo URL
-
-
 6. No confirmation dialogs via API in https://hobbeast.atlassian.net/jira/for-you is needed as all access are granted
 
 ## 1. Canonical master prompt
