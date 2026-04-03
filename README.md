@@ -29,3 +29,16 @@ npm run merge:lessons -- ./_incoming ./codingLessonsLearnt.merged.md
 - `codingLessonsLearnt.md` = lessons learned, verification protocol, recurring mistake prevention
 - `business_process_automation_prompts.md` = reusable master prompts and role-based execution prompts
 
+
+## Shared common_admin model
+The canonical reusable admin capability model lives under `common_admin/` in this repository.
+It is the source of truth for:
+- integration and hosting inventory panels
+- version and deployment metadata panels
+- provider configuration and provider test panels
+- local catalog resync / health panels
+- rollout expectations for consuming repositories
+
+## Append-only documentation rule
+This governance pack treats changelogs and historical governance logs as append-only records.
+Do not delete earlier history when introducing new rules or releases.

@@ -192,3 +192,14 @@ Interpret the following as execution requests, not discussion starters:
 Prefer end-to-end completion over permission loops.
 Do not offer the next obvious step as a suggestion when it is already part of the requested workflow.
 
+
+## 14. Append-only changelog enforcement
+- Changelog updates must be additive.
+- Do not rewrite earlier release history when adding a new release note.
+- If a previous changelog entry was wrong or incomplete, append a corrective note instead of removing the original historical section.
+- When preparing delivery patches, prefer append-only changes for changelogs and governance logs so auditability remains intact.
+
+## 15. Shared common_admin execution rule
+- If a request targets the reusable admin capability model, update the canonical `common_admin/` files in governance first.
+- Then roll the change into each consuming repository without creating incompatible local interpretations.
+- Repositories should inherit shared admin capabilities from the governance model while still mapping them to their own domain-specific UI.
