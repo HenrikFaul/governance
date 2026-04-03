@@ -1,0 +1,1 @@
+Delivery build safety note: repository-visible TS/TSX delivery artifacts must be build-safe or kept outside main typecheck scope.

@@ -1,9 +1,3 @@
 CHANGELOG.md
-README.md
-agent_execution_rules.md
-common_admin/common_admin_model.md
-common_admin/common_admin_prompts.md
-common_admin/common_admin_rollout_rules.md
-controller.md
-versioning/14040333_v1.0.1_ai_dev_prompts.md
-versioning/14040333_v1.0.1_business_request_summary.pdf
+codingLessonsLearnt.md
+PATCH_FILE_LIST.txt

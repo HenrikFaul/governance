@@ -42,3 +42,10 @@ This repository is governed by the central pack from `HenrikFaul/governance`.
 - Never replace, rewrite, truncate, reorder destructively, or drop earlier release history.
 - New deliveries must be added as new sections while preserving all previous entries verbatim.
 - If a changelog correction is required, fix it by appending a corrective entry instead of deleting historical content.
+- Structural chronological reordering (fixing version order without dropping content) is permitted only as part of an explicit governance fix delivery, with full history verified as preserved.
+
+## APPEND files rule
+- Files named `CHANGELOG_APPEND_v*.md` and `CODING_LESSONS_APPEND_v*.md` are temporary staging files.
+- They must be merged into the canonical target file (`changelog.md`, `codingLessonsLearnt.md`) as soon as the delivery is finalized.
+- After merging, the APPEND file must be deleted from the repository root.
+- Never accumulate APPEND files — they are a single-use staging mechanism, not a permanent record.

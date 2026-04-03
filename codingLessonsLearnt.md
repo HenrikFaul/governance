@@ -14,3 +14,24 @@
 - **Javítás**: Az append-only changelog szabály bekerült a governance kanonikus szabályai közé, és a korábbi történet vissza lett állítva.
 - **Megelőzés**: MINDEN repo changelogját append-only történetként kell kezelni. Korábbi bejegyzést törölni, lecserélni vagy felülírni tilos.
 
+
+
+## ➕ APPEND — 2026-04-03 siteadmin / venue-admin szétválasztás (Pubapp-specifikus)
+
+### [HIBA-051] Site Admin rossz entrypointra mutatott a venue-admin shellből
+- **Dátum**: 2026-04-03 (Pubapp v1.4.3)
+- **Fájl**: `src/app/admin/layout.tsx`
+- **Hibaüzenet**: A venue-admin oldalsávban megjelent a Site Admin link, ami nem a Site Admin főoldalra, hanem a `siteadmin/venues` nézetre vitt — a dashboard üresnek látszott.
+- **Gyökérok**: A siteadmin külön route létrejött, de a régi `/admin` shellben bent maradt a keverő menüpont rossz célútvonallal.
+- **Javítás**: A közvetlen sidebar menüpont kikerült a venue-admin navigációból; superadmin esetén csak elkülönítő CTA marad a `/siteadmin` felületre.
+- **Megelőzés**: Ha két adminhatókör szétválik, az egyik shell főnavigációjában NEM maradhat a másik felület azonos prioritású menüpontként. Az entrypoint a gyökér route-ra mutasson, nem belső aloldalra.
+
+### [HIBA-052] A külön siteadmin route létrehozása önmagában nem szünteti meg a funkcionális keveredést
+- **Dátum**: 2026-04-03 (Pubapp v1.4.4)
+- **Fájl**: `src/app/admin/layout.tsx`, `src/app/admin/config/page.tsx`
+- **Hibaüzenet**: A siteadmin a szolgáltatói admin részeként látszott; a Common Admin bent maradt a venue-admin konfigurátorban.
+- **Gyökérok**: Az új route és layout létrejött, de a régi entrypointok és tabok megmaradtak a venue-admin shellben.
+- **Javítás**: Venue-adminból eltávolítva a Site Admin navigáció és a Common Admin tab; siteadmin/venues visszalépést kapott a `/siteadmin` dashboardra.
+- **Megelőzés**: Admin hatóköri szétválasztásnál kötelező a régi shell ÖSSZES entrypointját, tabját és navigációs elemét eltávolítani — nem elég csak az új route-ot létrehozni.
+
+*Appendelve: 2026-04-03 — governance integritás sync*
